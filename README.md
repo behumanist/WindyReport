@@ -26,9 +26,9 @@ To use this weather predictor:
 
 ## Deployment
 
-This project is deployed on Firebase at [https://windyweatherreport.web.app/](https://windyweatherreport.web.app/). Please note that the page uses HTTP instead of HTTPS. If the content is blocked due to browser settings, allow insecure content by following these steps:
+This project is deployed on Firebase at [https://windyweatherreport.web.app/](https://windyweatherreport.web.app/). 
 
-- **If the weather search is not working:**
+Please note that the page uses HTTP requests instead of HTTPS. If the content is blocked due to browser settings, allow insecure content by following these steps:
   - Click on the shield icon in the address bar.
   - Select "Load unsafe scripts" or similar options to allow insecure content.
 
