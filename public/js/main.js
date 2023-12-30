@@ -30,10 +30,13 @@ Vue.createApp({
     },
     methods: {
         getCities() {
-            
+
             fetch("data.json")
                 .then(response => response.json())
-                .then(data => (this.citydata = data))
+                .then(data => {
+                    this.citydata = data;
+                    console.table(this.citydata)
+                })
                 .catch((err) => this.err = !this.err)
 
         },
@@ -41,11 +44,16 @@ Vue.createApp({
             this.weatherdata = [];
             this.err = false;
             this.loading = true;
-            fetch("http://www.7timer.info/bin/api.pl?lon=" + value.longitude + "&lat=" + value.latitude + "&product=civillight&output=json")
+            fetch("https://www.7timer.info/bin/api.pl?lon=" + value.longitude + "&lat=" + value.latitude + "&product=civillight&output=json")
                 .then(response => response.json())
-                .then(data => (this.weatherdata = data))
-                .catch((err) => this.err = !this.err);
+                .then(data => {
+                    this.weatherdata = data
+                    console.log(data)
+                })
+                .catch((err) => this.err = !this.err)
+
             this.loading = false;
+
         }
     }
 }).mount('#demo');

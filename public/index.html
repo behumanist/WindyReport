@@ -10,7 +10,7 @@
     <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
     <!-- reqs -->
     <script src="https://unpkg.com/vue@next"></script>
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="./css/master.css">
     <title>Windy Report</title>
 </head>
 
@@ -44,7 +44,7 @@
             </div>
         </div>
         <img v-if="err" src="./images/not-found.png" alt="">
-        <img v-if="weatherdata.length == 0" src="./images/news.png" alt="">
+        <img v-if="weatherdata.length == 0 && !err" src="./images/news.png" alt="">
     </div>
 
     <div class="footer">
@@ -55,6 +55,6 @@
 </body>
 
 
-<script type="module" src="js/main.js"></script>
+<script type="module" src="./js/main.js"></script>
 
 </html>
