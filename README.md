@@ -22,7 +22,15 @@ To use this weather predictor:
 
 3. Run the application (add specific instructions for running your JavaScript project).
 
-4. Select the European city for which you want the weather forecast.
+4. Input the European city for which you want the weather forecast.
+
+## Deployment
+
+This project is deployed on Firebase at [https://windyweatherreport.web.app/](https://windyweatherreport.web.app/). 
+
+Please note that the page uses HTTP requests instead of HTTPS. If the content is blocked due to browser settings, allow insecure content by following these steps:
+  - Click on the shield icon in the address bar.
+  - Select "Load unsafe scripts" or similar options to allow insecure content.
 
 ## License
 
